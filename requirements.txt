@@ -1,0 +1,3 @@
+sseclient==0.0.27
+easyai==2.0.12
+requests==2.32.3
