@@ -38,14 +38,14 @@ class Board:
 
     def is_there_a_winner(self):
         for filler in [x for x in self.fillers_used if x != self.emptyFiller]:
-            if self.find_filler_occurrencies(filler, 4) > 0:
+            if self.find_filler_lines_of_num(filler, 4) > 0:
                 return True
         return False
 
     def is_over(self):
         return self.is_there_a_winner()
 
-    def find_filler_occurrencies(self, filler, num):
+    def find_filler_lines_of_num(self, filler, num):
         return self.substring_count(filler * num)
 
     def substring_count(self, string_to_find):
@@ -108,25 +108,12 @@ class Board:
 
 
 def default_scoring_function(board: Board, filler_player: str, filler_opponent: str) -> int:
-    if board.find_filler_occurrencies(filler_player, 4) > 0:
-        return 50000
-
-    if board.find_filler_occurrencies(filler_opponent, 4) > 0:
-        return -50000
-
     return 0
 
 @dataclass
 class Player(AI_Player):
     name: str
     filler: str
-    #fillers: list[str]
-    #uuid https://docs.python.org/3/library/uuid.html
-
-    @property
-    def id(self) -> str:
-        return str(id(self))
-
 
     def __init__(self, name: str, filler: str):
         super().__init__(Negamax(4), name)
@@ -155,6 +142,8 @@ class EasyAIGame(TwoPlayerGame):
             except FullColumnException:
                 pass
 
+        # this is just for giving more illusion of intelligence
+        random.shuffle(result)
         return result
 
     def make_move(self, move: str):
