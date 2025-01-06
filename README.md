@@ -3,7 +3,7 @@
 This is a kind of "game about software development".
 Your goal is to write the "intelligence" piece of a Negamax algorithm (see https://en.wikipedia.org/wiki/Negamax) and defeat our Resident AI in a connect 4 match (see https://en.wikipedia.org/wiki/Connect_Four)
 
-Basically you'll have to write a **scoring function** that returns the amount of points that sums a given board, under the current player point of view.
+Basically you'll have to write a **scoring function** that returns the amount of points that sums a given board, under the current player point of view. Amount of points indicates how favourable current situation is.
 Theory says that the more accurate your estimation is, more probability of victory you'll have.
 
 A Board class with some helper method is provided for counting lines of coins and other stuff, check it out.
