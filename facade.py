@@ -6,9 +6,9 @@ from core import create_game
 
 class GameWrapper:
 
-    def __init__(self, api_host: str):
+    def __init__(self, api_host: str, player_name: str):
         payload = {
-            "creator_name": input('Player name > '),
+            "creator_name": player_name,
             "session_name": "Unnamed Session",
             "board_w": 8,
             "board_h": 8

@@ -19,9 +19,7 @@ pip install -r requirements.txt
 
 scoring_function module is where estimation function is located, improve it as much as you can!
 
-Execute:  
-python main.py https://connect4-api.onrender.com  
-to test it against Resident AI. Currently it is deployed on a free cloud service, be patient :-)
+Execute run.sh to test it against Resident AI. Currently it is deployed on a free cloud service, be patient :-)
 
 A client is provided here             
 https://connect4-api.onrender.com/client
