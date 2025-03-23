@@ -4,7 +4,7 @@ from json import JSONDecodeError
 
 from cleo.commands.command import Command
 from cleo.application import Application
-from cleo.helpers import argument, option
+from cleo.helpers import option
 
 from scoring_function import scoring_function
 from facade import GameWrapper
@@ -19,7 +19,6 @@ def main(api_host: str, player_name: str):
 
     # Rock and roll!
     c = game_wrapper.start()
-    my_game.custom_scoring_function = scoring_function
 
     try:
 
