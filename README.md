@@ -13,7 +13,9 @@ in any time :-)
 
 **Installation**
 
-pip install -r requirements.txt
+* clone this repository or [download](https://github.com/laxertu/connect4-ai-player/archive/refs/tags/1.0.0.tar.gz) it
+
+* install dependencies: pip install -r requirements.txt
 
 **Usage**
 
