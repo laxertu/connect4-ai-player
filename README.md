@@ -21,10 +21,12 @@ scoring_function module is where estimation function is located, improve it as m
 
 Execute **run.sh** to test it against Resident AI. Currently it is deployed on a free cloud service, be patient :-)
 
+**If you want share your creature, I'd love to receive related PR!!**  and possibly add it as an opponent choice
+
 A client is provided here             
 https://connect4-api.onrender.com/client
 
-API documentation, if you want to write your own client. PRs are welcome too :-)  
+API documentation, if you want to write your own client.  
 https://connect4-api.onrender.com/docs
 
 **Known bugs**
