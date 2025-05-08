@@ -8,9 +8,6 @@ Theory says that the more accurate your estimation is, more probability of victo
 
 A Board class with some helper method is provided for counting lines of coins and other stuff, check it out.
 
-**Currently we are still in early access, so you will find bugs, and all discussed here may change** 
-in any time :-)
-
 **Installation**
 
 * clone this repository or [download](https://github.com/laxertu/connect4-ai-player/archive/refs/tags/1.0.0.tar.gz) it
