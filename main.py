@@ -19,7 +19,6 @@ def main(api_host: str, player_name: str):
 
     # Rock and roll!
     c = game_wrapper.start()
-    my_game.custom_scoring_function = scoring_function
 
     try:
 

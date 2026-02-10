@@ -9,7 +9,7 @@ class GameWrapper:
     def __init__(self, api_host: str, player_name: str):
         payload = {
             "creator_name": player_name,
-            "session_name": "Unnamed Session",
+            "session_name": f"{player_name}'s Session",
             "board_w": 8,
             "board_h": 8
         }
